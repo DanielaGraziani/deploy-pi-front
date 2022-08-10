@@ -1,6 +1,7 @@
 .landingContainer{
     background-image: url('../utils/landing.png');
     background-position: center;
+    background-size:80vw;
     background-repeat: no-repeat;
     width: 100vw;
     height: 100vh;

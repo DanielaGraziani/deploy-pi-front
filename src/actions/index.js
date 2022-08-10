@@ -17,7 +17,7 @@ import {
 } from "./types";
 
 export const getAllRecipesHome = () => (dispatch) => {
-  return fetch("http://localhost:3001/recipes")
+  return fetch("https://recipe-ideas-deploy.herokuapp.com/recipes")
     .then((response) => response.json())
     .then((json) => {
       dispatch({
@@ -29,7 +29,7 @@ export const getAllRecipesHome = () => (dispatch) => {
 };
 
 export const getRecipeByID = (id) => (dispatch) => {
-  return fetch("http://localhost:3001/recipes/" + id)
+  return fetch("https://recipe-ideas-deploy.herokuapp.com/recipes/" + id)
     .then((response) => response.json())
     .then((json) => {
       dispatch({
@@ -51,7 +51,7 @@ export const getRecipeByID = (id) => (dispatch) => {
 };
 
 export const getRecipeByName = (name) => (dispatch) => {
-  return fetch("http://localhost:3001/recipes?name=" + name)
+  return fetch("https://recipe-ideas-deploy.herokuapp.com/recipes?name=" + name)
     .then((response) => response.json())
     .then((json) => {
       dispatch({
@@ -74,7 +74,7 @@ export const getRecipeByName = (name) => (dispatch) => {
 export function getTypesOfDiets() {
   return async (dispatch) => {
     try {
-      const json = await axios.get("http://localhost:3001/types");
+      const json = await axios.get("https://recipe-ideas-deploy.herokuapp.com/types");
       return dispatch({
         type: GET_TYPES_OF_DIET,
         payload: json.data,
@@ -88,7 +88,7 @@ export function getTypesOfDiets() {
 export function postRecipe(payload) {
   return async (dispatch) => {
     try {
-      const json = await axios.post("http://localhost:3001/recipe", payload);
+      const json = await axios.post("https://recipe-ideas-deploy.herokuapp.com/recipe", payload);
       return dispatch({
         type: POST_RECIPE,
         payload: json.data,
@@ -133,7 +133,7 @@ export const filterRecipesByDiet = (payload) => {
 
 export const deleteRecipe = (id) => {
   return async function (dispatch) {
-    await axios.delete(`http://localhost:3001/recipes/${id}`);
+    await axios.delete(`https://recipe-ideas-deploy.herokuapp.com/recipes/${id}`);
     return dispatch({
       type: DELETE_RECIPE,
     });

@@ -1,0 +1,64 @@
+.landingContainer{
+    background-image: url('../utils/landing.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+}
+
+.landingTitle{
+    padding: 80px;
+    margin-left: 190px;
+    margin-bottom: 80px;
+  -webkit-text-stroke: 2px #23211f;
+  letter-spacing: 0.2rem;
+}
+
+/* .textContainer{
+  background-color: red;
+  margin-top: 40px;
+} */
+
+.text{
+    font-size: 1rem;
+    color:black;
+    font-weight: bold;
+    padding-left: 180px;
+    margin-top: -70px;
+  -webkit-text-stroke: 1px #23211f;
+}
+
+.buttonContainer{
+    padding-bottom: 120px;
+    margin-left: 180px;
+    margin-top: 20px;
+    
+    }
+
+.button{
+padding: 1.3em 3em;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #23211f;
+  background-color: #fff;
+  border: 2px solid #23211f;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+}
+
+.button:hover {
+    background-color: #f4511e;
+    box-shadow: 0px 15px 20px rgb(255, 171, 145);
+    color: #fff;
+    transform: translateY(-5px);
+  }
+  
+  .button:active {
+    transform: translateY(-1px);
+  }
+  

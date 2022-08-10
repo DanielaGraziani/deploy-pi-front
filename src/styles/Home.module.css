@@ -1,0 +1,27 @@
+.cardsContainer{
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    gap: 120px;
+    padding: 80px;
+    justify-content: center;
+
+}
+
+.link{
+    text-decoration: none;
+
+}
+
+@media(max-width: 560px){
+    .cardsContainer{
+        grid-template-columns: repeat(auto-fill, 100%)};
+}
+
+
+.spinnerContainer{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+ 
+    }

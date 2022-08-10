@@ -1,0 +1,45 @@
+.paginationContainer {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 8vh;
+
+  }
+  
+  .pagination {
+    padding: 0;
+    margin-bottom: 70px;
+    width: 70vw;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+  }
+  
+  .number {
+    background-color: #fc6e43;
+    /* background-color: rgb(243, 235, 235); */
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 2px 0 2px;
+    cursor: pointer;
+    width: 2vw;
+    border-radius: 10px;
+    height: 5vh;
+    color: white;
+    font-size: large;
+    font-weight: bold;
+    padding: 7px
+  }
+  
+  .number:hover{
+      background-color: rgb(255, 171, 145) ;
+      /* background-color: #b1b1b13d; */
+      color: white;
+      
+  }
+  

@@ -1,0 +1,202 @@
+
+.container{
+  width: 50vw;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  justify-items: center;
+  align-items: center;
+  background: rgba(102, 102, 102, 0.074);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(19.5px);
+  border-radius: 15px;
+  border: 1px solid rgba(93, 92, 92, 0.18);
+  background-image: url(../utils/minimal.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  
+}
+
+
+
+.label {
+  /* width:97px; */
+  font-weight: bolder;
+  display: inline-block;
+  padding: 20px;
+}
+
+.sForm {
+  margin-top: 20px;
+  background: transparent;
+  border: none;
+  font-size: 1.3rem;
+  height: 35px;
+  padding: 5px;
+  width: 200px;
+  color: white;
+  margin-bottom: 20px;
+  background-color: black;
+}
+
+.input {
+  width: 180px;
+  padding: 6px 30px;
+  border: 2px solid #363636;
+  border-radius: 6px;
+  background-color: #f6f6f6;
+  /* margin: 20px; */
+  margin-top: 20px;
+  display: inline-block;
+  font-size: 1.2rem;
+}
+
+.inputSteps {
+  width: 180px;
+  padding: 2px 60px;
+  border: 2px solid #363636;
+  border-radius: 6px;
+  background-color: #f6f6f6;
+  /* margin: 20px; */
+  margin-top: 20px;
+  display: inline-block;
+  font-size: 1.2rem;
+}
+
+
+
+.inputText {
+  width: 180px;
+  padding: 3px 10px;
+  border: 2px solid #363636;
+  border-radius: 3px;
+  background-color: #f6f6f6;
+  /* margin: 20px; */
+  margin-top: 30px;
+  display: inline-block;
+}
+
+.buttonSend {
+  /* width: 30%; */
+  padding: 2em 15em;
+  margin-top: 32px;
+  border: 2px solid #000;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  /* border: none; */
+  font-weight: bold;
+}
+
+.buttonSend:active {
+  background-color: #9061ffff;
+  box-shadow: 0px 15px 20px rgb(149, 117, 205);
+  color: #fff;
+  transform: translateY(3px);
+  border: none;
+}
+
+
+.buttonGo {
+  /* width: 30%; */
+  /* padding: 8px 16px; */
+  margin-top: 32px;
+  border: 2px solid #000;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  padding: 2em 15em;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  /* border: none; */
+  box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.1);
+  outline: none;
+  font-weight: bold;
+}
+
+.buttonGo:hover {
+  background-color: #9061ffff;
+  box-shadow: 0px 15px 20px rgb(149, 117, 205);
+  color: #fff;
+  transform: translateY(3px);
+  border: none;
+}
+
+.title {
+  font-size: 2.5rem;
+  margin-top: 20px;
+  font-weight: bold;
+  margin-bottom: 40px;
+  letter-spacing: 2px;
+  font-family: Italiana;
+}
+
+.sign{
+  color:#c62828
+}
+
+.option {
+  background-color: #000;
+}
+
+.selectDiet {
+  display: flex;
+  flex-wrap: wrap;
+  font-weight: bolder;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  
+}
+
+.selectX {
+  background-color: #c62828;
+  border-radius: 5px;
+  font-weight: bolder;
+  width: 20px;
+  
+}
+
+.selectContainer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-bottom: 20px;
+  
+}
+
+
+.pTitle {
+  font-weight: bolder;
+  margin-top: 16px;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  /* color: #424242; */
+  color: #000;
+  font-size: 1.3rem;
+}
+
+.dietTitle{
+  font-size: 1.3rem;
+}
+
+/* .inputD{
+    border: 3px solid #363636;
+	padding:3px 10px;
+} */
+
+.error {
+  padding-top: 15px;
+  font-size: 1rem;
+  color: #d32f2f;
+
+  margin: 0;
+  letter-spacing: 1px;
+}

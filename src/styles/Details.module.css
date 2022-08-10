@@ -1,0 +1,220 @@
+/* --------------------------------- general -------------------------------- */
+.container {
+  width: 70vw;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  justify-items: center;
+  align-items: center;
+  background: rgba(102, 102, 102, 0.074);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(19.5px);
+  border-radius: 15px;
+  border: 1px solid rgba(93, 92, 92, 0.18);
+  -webkit-animation: fade-in 0.8s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: fade-in 0.8s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+
+/* ---------------------------------- title --------------------------------- */
+.title {
+  margin-top: 40px;
+  font-size: 2rem;
+  color: #4a148c;
+  text-align: center;
+  font-family: Italiana;
+}
+
+/* ------------------------------ image recipe ------------------------------ */
+.img {
+  margin-top: 24px;
+  position: relative;
+  height: 60%;
+  width: 60%;
+  border-radius: 15px;
+  border: 8px solid rgb(149, 117, 205);
+}
+
+/* ------------------------ types of diets container ------------------------ */
+.type {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 24px;
+  position: relative;
+  align-items: center;
+}
+
+.typeItems {
+  margin-top: 20px;
+  text-transform: capitalize;
+  text-align: center;
+  color: white;
+  letter-spacing: 0.5px;
+  margin: 0.5rem;
+  font-size: 1.2rem;
+  padding: 0.5rem;
+  border: solid 1px transparent;
+  border-radius: 0.8rem;
+  background-color: #ff8a65;
+}
+
+.scoreContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-items: center;
+  margin-top: 20px;
+  margin-right: -4rem;
+  color: #494848;
+}
+
+.healthScore {
+  margin-right: 3rem;
+  font-size: 1.7rem;
+}
+
+.clock {
+  margin-right: 3rem;
+  font-size: 1.7rem;
+}
+
+.person {
+  margin-right: 3rem;
+  font-size: 1.7rem;
+}
+
+.score {
+  font-size: 1.7rem;
+}
+/* --------------------------------- summary -------------------------------- */
+.summaryContainer {
+  margin-top: 26px;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.summaryText {
+  text-align: justify;
+  color: #494848;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.summaryTitle {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  font-weight: 500;
+  color: #4a148c;
+}
+
+.brocco {
+  margin-top: -250px;
+  margin-right: 900px;
+  position: relative;
+  z-index: -1;
+  opacity: 0.6;
+}
+
+.pencil {
+  margin-top: -350px;
+  margin-left: 1000px;
+  position: relative;
+  z-index: -1;
+  opacity: 0.5;
+}
+
+.stepContainer {
+  margin-top: -80px;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: justify;
+  justify-content: center;
+  
+}
+
+
+.stepTitle {
+  margin-bottom: 10px;
+  color: #4a148c;
+  font-weight: 500;
+  font-size: 2rem;
+  
+}
+
+.stepItem {
+  list-style: none;
+  margin-bottom: 20px;
+  color: #212121;
+  font-weight: 400;
+  font-size: 1.5rem;
+  
+}
+
+.stepTitleContainer{
+  font-size: 1.5rem;
+}
+
+.button {
+  margin-left: 40px;
+  /* margin-top: 10px; */
+  margin-bottom: 40px;
+  padding: 1em 3em;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #000;
+  background-color: #fff;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+}
+
+.button:hover {
+  background-color: #9061ffff;
+  box-shadow: 0px 15px 20px rgb(149, 117, 205);
+  color: #fff;
+  transform: translateY(-7px);
+}
+
+.button:active {
+  transform: translateY(-1px);
+}
+
+.spinnerContainer {
+  margin: 0;
+  position: relative;
+  left: 50%;
+}
+
+.delete {
+  position: absolute;
+  color: #494848;
+  /* background-color: #ff8a65; */
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px 25px;
+  margin: 12px 478px;
+  width: 75px;
+  /* border-radius: 5px; */
+  /* box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1); */
+  cursor: pointer;
+  border: none;
+}
+
+.delete:hover {
+  background-color: #9061ffff;
+  box-shadow: 0px 15px 20px rgb(149, 117, 205);
+  color: #fff;
+  transform: translateY(-2px);
+}

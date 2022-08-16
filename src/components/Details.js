@@ -3,7 +3,7 @@ import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { getRecipeByID, deleteRecipe, reset } from "../actions";
 import { Link, useParams, useNavigate } from "react-router-dom";
-import defaultImg from "../utils/image-not-found.png";
+import defaultImg from "../utils/image-not-found1.png";
 import Loader from "./Loader";
 import s from "../styles/Details.module.css";
 import brocco from "../utils/piece-of-broccoli.png";

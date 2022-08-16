@@ -30,9 +30,9 @@
     /* color:black; */
     font-weight: bold;
     padding-left: 180px;
-    margin-top: -178px;
+    margin-top: -189px;
     font-family: Italiana;
-  -webkit-text-stroke: 1px #f4511e;
+  -webkit-text-stroke: 1px #FF8A65;
 }
 
 .buttonContainer{
@@ -43,7 +43,7 @@
     }
 
 .button{
-padding: 1.3em 3em;
+padding: 1em 2em;
   font-size: 12px;
   text-transform: uppercase;
   letter-spacing: 2.5px;

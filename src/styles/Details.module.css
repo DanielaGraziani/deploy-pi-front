@@ -1,5 +1,6 @@
 /* --------------------------------- general -------------------------------- */
 .container {
+  overflow-x: hidden;
   width: 70vw;
   margin-left: auto;
   margin-right: auto;
@@ -29,8 +30,8 @@
 .img {
   margin-top: 24px;
   position: relative;
-  height: 60%;
-  width: 60%;
+  height: 50%;
+  width: 50%;
   border-radius: 15px;
   border: 8px solid rgb(149, 117, 205);
 }
@@ -72,21 +73,21 @@
 
 .healthScore {
   margin-right: 3rem;
-  font-size: 1.7rem;
+  font-size: 1.5rem;
 }
 
 .clock {
   margin-right: 3rem;
-  font-size: 1.7rem;
+  font-size: 1.5rem;
 }
 
 .person {
   margin-right: 3rem;
-  font-size: 1.7rem;
+  font-size: 1.5rem;
 }
 
 .score {
-  font-size: 1.7rem;
+  font-size: 1.5rem;
 }
 /* --------------------------------- summary -------------------------------- */
 .summaryContainer {
@@ -100,7 +101,7 @@
 .summaryText {
   text-align: justify;
   color: #494848;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: 400;
 }
 
@@ -143,7 +144,7 @@
   margin-bottom: 10px;
   color: #4a148c;
   font-weight: 500;
-  font-size: 2rem;
+  font-size: 1.8rem;
   
 }
 
@@ -152,12 +153,12 @@
   margin-bottom: 20px;
   color: #212121;
   font-weight: 400;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   
 }
 
 .stepTitleContainer{
-  font-size: 1.5rem;
+  font-size: 1.3rem;
 }
 
 .button {
@@ -200,11 +201,11 @@
   position: absolute;
   color: #494848;
   /* background-color: #ff8a65; */
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: bold;
   text-align: center;
-  padding: 10px 25px;
-  margin: 12px 478px;
+  padding: 10px 15px;
+  margin: 12px 350px;
   width: 75px;
   /* border-radius: 5px; */
   /* box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1); */

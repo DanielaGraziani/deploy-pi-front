@@ -13,11 +13,11 @@ import {
   GET_TYPES_OF_DIET,
   POST_RECIPE,
   DELETE_RECIPE,
-  RESET
+  RESET,
 } from "./types";
 
 export const getAllRecipesHome = () => (dispatch) => {
-  return fetch("https://recipe-ideas-deploy.herokuapp.com/recipes")
+  return fetch("https://deploy-pi-back-production.up.railway.app/recipes")
     .then((response) => response.json())
     .then((json) => {
       dispatch({
@@ -29,7 +29,7 @@ export const getAllRecipesHome = () => (dispatch) => {
 };
 
 export const getRecipeByID = (id) => (dispatch) => {
-  return fetch("https://recipe-ideas-deploy.herokuapp.com/recipes/" + id)
+  return fetch("https://deploy-pi-back-production.up.railway.app/recipes/" + id)
     .then((response) => response.json())
     .then((json) => {
       dispatch({
@@ -45,13 +45,13 @@ export const getRecipeByID = (id) => (dispatch) => {
         showConfirmButton: false,
         html: `<a href="/recipes"> Click here to return to home</a>`,
       });
-
-      
     });
 };
 
 export const getRecipeByName = (name) => (dispatch) => {
-  return fetch("https://recipe-ideas-deploy.herokuapp.com/recipes?name=" + name)
+  return fetch(
+    "https://deploy-pi-back-production.up.railway.app/recipes?name=" + name
+  )
     .then((response) => response.json())
     .then((json) => {
       dispatch({
@@ -62,19 +62,21 @@ export const getRecipeByName = (name) => (dispatch) => {
     .catch((error) => {
       // alert("This recipes is not found");
       Swal.fire({
-        position: 'center',
-        icon: 'error',
-        title: 'This recipes is not found',
+        position: "center",
+        icon: "error",
+        title: "This recipes is not found",
         showConfirmButton: false,
-        timer: 2000
-      })
+        timer: 2000,
+      });
     });
 };
 
 export function getTypesOfDiets() {
   return async (dispatch) => {
     try {
-      const json = await axios.get("https://recipe-ideas-deploy.herokuapp.com/types");
+      const json = await axios.get(
+        "https://deploy-pi-back-production.up.railway.app/types"
+      );
       return dispatch({
         type: GET_TYPES_OF_DIET,
         payload: json.data,
@@ -88,7 +90,10 @@ export function getTypesOfDiets() {
 export function postRecipe(payload) {
   return async (dispatch) => {
     try {
-      const json = await axios.post("https://recipe-ideas-deploy.herokuapp.com/recipe", payload);
+      const json = await axios.post(
+        "https://deploy-pi-back-production.up.railway.app/recipe",
+        payload
+      );
       return dispatch({
         type: POST_RECIPE,
         payload: json.data,
@@ -133,16 +138,17 @@ export const filterRecipesByDiet = (payload) => {
 
 export const deleteRecipe = (id) => {
   return async function (dispatch) {
-    await axios.delete(`https://recipe-ideas-deploy.herokuapp.com/recipes/${id}`);
+    await axios.delete(
+      `https://deploy-pi-back-production.up.railway.app/recipes/${id}`
+    );
     return dispatch({
       type: DELETE_RECIPE,
     });
   };
 };
 
-export const reset=()=>{
-  return (dispatch)=>{
-    dispatch({type: RESET})
-  }
-}
-
+export const reset = () => {
+  return (dispatch) => {
+    dispatch({ type: RESET });
+  };
+};
